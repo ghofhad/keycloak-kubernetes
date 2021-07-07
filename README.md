@@ -63,10 +63,11 @@ Go to the Keycloak Admin Console and login with the username and password you cr
 
 ## Deploying your application on Kubernetes
  Now we will deploy a simple NGINX web server to demonstrate a front-end Web application that will be protected behind Keycloak.
- 1.	Deploy application 
-    Here is a simple yaml file composed of a Deployment, a Service and an Ingress. 
+ 1.	Deploy application : 
+   
+   Here is a simple yaml file composed of a Deployment, a Service and an Ingress. 
    ```sh
-   kubectl apply –f keycloack-ingress.yaml 
+   kubectl apply –f nginx.yaml
    ```
    
   before testing , you must update the keycloak .yaml file specialy Gatekeeper configMaps 
