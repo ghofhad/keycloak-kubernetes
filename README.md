@@ -70,7 +70,7 @@ Go to the Keycloak Admin Console and login with the username and password you cr
    kubectl apply –f nginx.yaml
    ```
    
-  before testing , you must update the keycloak .yaml file specialy Gatekeeper configMaps 
+  before testing , you must update the keycloak .yaml file especially Gatekeeper configMaps 
    * discovery-url is the URL of your Keycloak server with /auth/realms/[realm_name] at the end. I used the nip.io service here too.
    * skip-openid-provider-tls-verify since Keycloak has no valid certificates, we have this as true
    * client-id is the client ID we obtained when creating the "gatekeeper" client on Keycloak
